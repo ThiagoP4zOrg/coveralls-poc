@@ -33,22 +33,22 @@ class Calculator:
             raise ValueError("Cannot compute factorial of a negative number")
         return math.factorial(int(x))
 
-    # def logarithm(x, base):
-    #     if x <= 0 or base <= 0 or base == 1:
-    #         raise ValueError("Invalid input for logarithm")
-    #     return math.log(x, base)
+    def logarithm(x, base):
+        if x <= 0 or base <= 0 or base == 1:
+            raise ValueError("Invalid input for logarithm")
+        return math.log(x, base)
 
-    # def exponential(x):
-    #     return math.exp(x)
+    def exponential(x):
+        return math.exp(x)
     
-    # # New functions
+    # New functions
 
-    # def sine(x):
-    #     return math.sin(math.radians(x))
+    def sine(x):
+        return math.sin(math.radians(x))
 
-    # def cosine(x):
-    #     return math.cos(math.radians(x))
+    def cosine(x):
+        return math.cos(math.radians(x))
 
-    # def tangent(x):
-    #     return math.tan(math.radians(x))
+    def tangent(x):
+        return math.tan(math.radians(x))
 
