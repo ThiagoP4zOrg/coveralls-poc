@@ -16,22 +16,22 @@ class Calculator:
         #     return 'Cannot divide by 0'
         return x * 1.0 / y
 
-    # def modulus(x, y):
-    #     return x % y
+    def modulus(x, y):
+        return x % y
 
-    # def power(x, y):
-    #     return x ** y
+    def power(x, y):
+        return x ** y
 
-    # def square_root(x):
-    #     return x ** 0.5
+    def square_root(x):
+        return x ** 0.5
 
-    # def absolute(x):
-    #     return abs(x)
+    def absolute(x):
+        return abs(x)
 
-    # def factorial(x):
-    #     if x < 0:
-    #         raise ValueError("Cannot compute factorial of a negative number")
-    #     return math.factorial(int(x))
+    def factorial(x):
+        if x < 0:
+            raise ValueError("Cannot compute factorial of a negative number")
+        return math.factorial(int(x))
 
     # def logarithm(x, base):
     #     if x <= 0 or base <= 0 or base == 1:
