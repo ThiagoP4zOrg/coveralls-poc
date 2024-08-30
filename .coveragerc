@@ -1,4 +1,4 @@
 [run]
 omit =
-    /app/test_calculator.py
-    /app/__init__.py
+    app/test_calculator.py
+    app/__init__.py
