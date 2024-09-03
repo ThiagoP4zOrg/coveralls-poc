@@ -87,3 +87,21 @@ def test_absolute():
     assert Calculator.absolute(0) == 0
     assert Calculator.absolute(3.14) == 3.14
     assert Calculator.absolute(-3.14) == 3.14
+
+def test_sine():
+    assert Calculator.sine(0) == pytest.approx(0.0, rel=1e-9)
+    assert Calculator.sine(30) == pytest.approx(0.5, rel=1e-9)
+    assert Calculator.sine(45) == pytest.approx(0.70710678118, rel=1e-9)
+    assert Calculator.sine(90) == pytest.approx(1.0, rel=1e-9)
+
+def test_cosine():
+    assert Calculator.cosine(0) == pytest.approx(1.0, rel=1e-9)
+    assert Calculator.cosine(30) == pytest.approx(0.86602540378, rel=1e-9)
+    assert Calculator.cosine(45) == pytest.approx(0.70710678118, rel=1e-9)
+    assert Calculator.cosine(90) == pytest.approx(0.0, rel=1e-9)
+
+def test_tangent():
+    assert Calculator.tangent(0) == pytest.approx(0.0, rel=1e-9)
+    assert Calculator.tangent(30) == pytest.approx(0.57735026919, rel=1e-9)
+    assert Calculator.tangent(45) == pytest.approx(1.0, rel=1e-9)
+    assert Calculator.tangent(60) == pytest.approx(1.73205080757, rel=1e-9)
